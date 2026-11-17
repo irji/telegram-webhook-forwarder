@@ -1,0 +1,21 @@
+{
+  "name": "telegram-webhook-forwarder",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker to forward messages from n8n to Telegram",
+  "main": "src/index.js",
+  "scripts": {
+    "deploy": "./deploy.sh",
+    "dev": "wrangler dev"
+  },
+  "keywords": [
+    "cloudflare",
+    "worker",
+    "telegram",
+    "webhook"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+}
