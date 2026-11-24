@@ -1,0 +1,15 @@
+name = "telegram-webhook-forwarder"
+main = "src/index.js"
+compatibility_date = "2023-10-25"
+
+# The route for the worker (optional, if using custom domain)
+# routes = [
+#   { pattern = "your-domain.com/message", custom_domain = true }
+# ]
+
+# Environment variables (non-secret)
+[vars]
+DEFAULT_CHAT_ID = "130082802" # Optional: Set a default chat ID here if you don't want to pass it in every request. Leave empty to require it in the body.
+
+# Secrets like BOT_TOKEN and SENDER_TOKEN should NOT be here.
+# They are set via `wrangler secret put` in the deploy script.

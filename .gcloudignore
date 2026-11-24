@@ -1,0 +1,11 @@
+# Files uploaded to Cloud Build on `gcloud run deploy --source .`
+# (without this file gcloud would upload node_modules too — hundreds of MB)
+.git
+node_modules
+*.log
+
+# Cloudflare-only files, not needed for the Docker build
+wrangler.toml
+deploy.sh
+deploy-gcp.sh
+.dev.vars
